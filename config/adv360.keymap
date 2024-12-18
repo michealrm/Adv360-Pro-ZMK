@@ -38,11 +38,11 @@
 
         default_layer {
             bindings = <
-&kp GLOBE       &kp N1                &kp N2            &kp N3  &kp N4    &kp N5  &tog 1                                                                            &mo 3          &kp N6  &kp N7    &kp N8     &kp N9             &kp N0                 &kp RA(SPACE)
-&kp TAB         &kp Q                 &kp W             &kp E   &kp R     &kp T   &kp HOME                                                                          &kp END        &kp Y   &kp U     &kp I      &kp O              &kp P                  &kp NON_US_BACKSLASH
-&kp ENTER       &kp A                 &kp S             &kp D   &kp F     &kp G   &kp PG_UP  &kp LEFT_COMMAND  &kp LEFT_CONTROL      &kp GRAVE   &kp RIGHT_COMMAND  &kp PAGE_DOWN  &kp H   &kp J     &kp K      &kp L              &kp SEMI               &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z                 &kp X             &kp C   &kp V     &kp B                                &kp LEFT_ALT          &kp COMMA                                     &kp N   &kp M     &kp MINUS  &kp EQUAL          &kp FSLH               &kp RIGHT_SHIFT
-&mo 2           &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp UP  &kp DOWN          &kp SPACE  &kp ENTER         &kp LG(SPACE)         &kp PERIOD  &kp ESCAPE         &kp BACKSPACE          &kp LEFT  &kp RIGHT  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &mo 2
+&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp N1    &kp N2   &kp N3  &kp N4    &kp N5  &tog 1                                                                                       &mo 3                  &kp N6  &kp N7    &kp N8     &kp N9     &kp N0     &kp RA(SPACE)
+&kp TAB                               &kp Q     &kp W    &kp E   &kp R     &kp T   &kp LEFT_BRACKET                                                                             &kp RIGHT_BRACKET      &kp Y   &kp U     &kp I      &kp O      &kp P      &kp NON_US_BACKSLASH
+&kp ESCAPE                            &kp A     &kp S    &kp D   &kp F     &kp G   &kp LEFT_PARENTHESIS  &kp LG(SPACE)     &kp LEFT_CONTROL      &kp GRAVE   &kp SINGLE_QUOTE   &kp RIGHT_PARENTHESIS  &kp H   &kp J     &kp K      &kp L      &kp SEMI   &kp ENTER
+&kp LEFT_SHIFT                        &kp Z     &kp X    &kp C   &kp V     &kp B                                           &kp LEFT_ALT          &kp COMMA                                             &kp N   &kp M     &kp MINUS  &kp EQUAL  &kp FSLH   &kp RIGHT_SHIFT
+&mo 2                                 &kp HOME  &kp END  &kp UP  &kp DOWN          &kp SPACE             &kp LEFT_COMMAND  &kp LEFT_CONTROL      &kp PERIOD  &kp RIGHT_COMMAND  &kp BACKSPACE                  &kp LEFT  &kp RIGHT  &kp PG_UP  &kp PG_DN  &mo 2
             >;
         };
 
