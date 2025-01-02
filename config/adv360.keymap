@@ -52,11 +52,11 @@
 
         default_layer {
             bindings = <
-&kp CAPSLOCK    &kp N1    &kp N2               &kp N3    &kp N4    &kp N5  &tog 1                                            &mo 3          &kp N6  &kp N7    &kp N8     &kp N9                &kp N0             &kp C_PLAY_PAUSE
-&kp TAB         &kp Q     &kp W                &kp E     &kp R     &kp T   &none                                             &none          &kp Y   &kp U     &kp I      &kp O                 &kp P              &kp BACKSLASH
-&none           &clt 7 A  &cmt LEFT_COMMAND S  &clt 5 D  &clt 4 F  &kp G   &none      &none     &none      &none  &none      &none          &kp H   &clt 8 J  &clt 9 K   &cmt RIGHT_COMMAND L  &clt 11 SEMICOLON  &kp ENTER
-&kp LEFT_SHIFT  &kp Z     &kp X                &kp C     &kp V     &kp B                        &none      &none                            &kp N   &kp M     &kp EQUAL  &kp MINUS             &kp FSLH           &kp RIGHT_SHIFT
-&mo 2           &kp HOME  &kp END              &none     &none             &kp SPACE  &kp BSPC  &none      &none  &kp SPACE  &kp BACKSPACE          &none     &none      &kp PAGE_DOWN         &kp PAGE_UP        &mo 2
+&kp ESCAPE      &kp N1    &kp N2    &kp N3               &kp N4    &kp N5  &tog 1                                            &mo 3          &kp N6  &kp N7    &kp N8                &kp N9         &kp N0            &kp C_PLAY_PAUSE
+&kp TAB         &kp Q     &kp W     &kp E                &kp R     &kp T   &none                                             &none          &kp Y   &kp U     &kp I                 &kp O          &kp P             &kp BACKSLASH
+&kp CAPSLOCK    &clt 6 A  &clt 5 S  &cmt LEFT_COMMAND D  &clt 4 F  &kp G   &none      &none     &none      &none  &none      &none          &kp H   &clt 7 J  &cmt RIGHT_COMMAND K  &clt 8 L       &clt 9 SEMICOLON  &kp ENTER
+&kp LEFT_SHIFT  &kp Z     &kp X     &kp C                &kp V     &kp B                        &none      &none                            &kp N   &kp M     &kp EQUAL             &kp MINUS      &kp FSLH          &kp RIGHT_SHIFT
+&mo 2           &kp HOME  &kp END   &none                &none             &kp SPACE  &kp BSPC  &none      &none  &kp SPACE  &kp BACKSPACE          &none     &none                 &kp PAGE_DOWN  &kp PAGE_UP       &mo 2
             >;
         };
 
@@ -90,83 +90,63 @@
             >;
         };
 
-        left_index {
+        l_nav {
             bindings = <
-&trans    &trans        &trans     &trans   &trans  &trans  &trans                                      &trans  &trans  &trans     &trans     &trans            &trans             &trans
-&trans    &trans        &trans     &trans   &trans  &trans  &trans                                      &trans  &trans  &trans     &trans     &trans            &trans             &trans
-&kp EXCL  &kp QUESTION  &kp COMMA  &kp DOT  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp ENTER  &kp SPACE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE
-&trans    &trans        &trans     &trans   &trans  &trans                  &trans      &trans                  &trans  &trans     &trans     &trans            &trans             &trans
-&trans    &trans        &trans     &trans   &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans     &trans            &trans             &trans
+&trans  &trans     &trans    &trans    &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans     &trans
+&trans  &trans     &trans    &trans    &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans     &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER  &trans
+&trans  &trans     &trans    &trans    &trans  &trans                  &trans      &trans                  &trans    &trans    &trans  &trans     &trans     &trans
+&trans  &trans     &trans    &trans    &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans     &trans
             >;
         };
 
-        left_middle {
+        l_write {
             bindings = <
-&trans  &trans         &trans     &trans  &trans     &trans  &trans                                      &trans  &trans  &trans        &trans    &trans    &trans        &trans
-&trans  &trans         &trans     &trans  &trans     &trans  &trans                                      &trans  &trans  &trans        &trans    &trans    &trans        &trans
-&trans  &kp BACKSLASH  &kp SLASH  &trans  &kp SPACE  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LS(LPAR)  &kp LBKT  &kp RBKT  &kp LS(RPAR)  &trans
-&trans  &trans         &trans     &trans  &trans     &trans                  &trans      &trans                  &trans  &trans        &trans    &trans    &trans        &trans
-&trans  &trans         &trans     &trans  &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans    &trans    &trans        &trans
+&trans  &trans        &trans  &trans     &trans   &trans  &trans                                      &trans  &trans  &trans     &trans   &trans       &trans     &trans
+&trans  &trans        &trans  &trans     &trans   &trans  &trans                                      &trans  &trans  &trans     &trans   &trans       &trans     &trans
+&trans  &kp EXCL      &trans  &kp COMMA  &kp DOT  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp GRAVE  &kp SQT  &kp LS(DQT)  &kp CARET  &trans
+&trans  &kp QUESTION  &trans  &trans     &trans   &trans                  &trans      &trans                  &trans  &trans     &trans   &trans       &trans     &trans
+&trans  &trans        &trans  &trans     &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans   &trans       &trans     &trans
             >;
         };
 
-        left_ring {
+        l_sym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans         &trans        &trans                                      &trans  &trans      &trans        &trans        &trans         &trans        &trans
+&trans  &trans  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(POUND)  &kp LS(DLLR)  &trans                                      &trans  &trans      &kp LS(AMPS)  &kp LS(STAR)  &kp LS(POUND)  &kp LS(DLLR)  &trans
+&trans  &trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT       &kp RBKT      &trans  &trans  &trans      &trans  &trans  &trans  &kp ESCAPE  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT       &kp RBKT      &trans
+&trans  &trans  &kp LS(LT)    &kp LS(GT)    &kp LS(LBRC)   &kp LS(RBRC)                  &trans      &trans                  &trans      &kp LS(LT)    &kp LS(GT)    &kp LS(LBRC)   &kp LS(RBRC)  &trans
+&trans  &trans  &trans        &trans        &trans                       &trans  &trans  &trans      &trans  &trans  &trans              &trans        &trans        &trans         &trans        &trans
             >;
         };
 
-        left_pinky {
+        r_nav {
             bindings = <
-&trans  &trans  &trans     &trans    &trans    &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans   &trans
-&trans  &trans  &trans     &trans    &trans    &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans   &trans
-&trans  &trans  &kp LCTRL  &kp LGUI  &kp LALT  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ESC  &trans
-&trans  &trans  &trans     &trans    &trans    &trans                  &trans      &trans                  &trans    &trans    &trans  &trans     &trans   &trans
-&trans  &trans  &trans     &trans    &trans            &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans   &trans
+&trans  &trans     &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &trans     &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &kp ENTER  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp RGUI  &kp RALT  &kp RCTRL  &trans
+&trans  &trans     &trans    &trans  &trans    &trans                     &trans      &trans                  &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &trans     &trans    &trans  &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans    &trans    &trans     &trans
             >;
         };
 
-        right_index {
+        r_write {
             bindings = <
-&trans     &trans             &trans            &trans     &trans     &trans  &trans                                      &trans  &trans  &trans  &trans   &trans     &trans        &trans
-&trans     &trans             &trans            &trans     &trans     &trans  &trans                                      &trans  &trans  &trans  &trans   &trans     &trans        &trans
-&kp GRAVE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp SPACE  &kp ENTER  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp DOT  &kp COMMA  &kp QUESTION  &kp EXCL
-&trans     &trans             &trans            &trans     &trans     &trans                  &trans      &trans                  &trans  &trans  &trans   &trans     &trans        &trans
-&trans     &trans             &trans            &trans     &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans   &trans     &trans        &trans
+&trans  &trans         &trans       &trans   &trans     &trans  &trans                                      &trans  &trans  &trans   &trans     &trans  &trans         &trans
+&trans  &trans         &trans       &trans   &trans     &trans  &trans                                      &trans  &trans  &trans   &trans     &trans  &trans         &trans
+&trans  &kp LS(CARET)  &kp LS(DQT)  &kp SQT  &kp GRAVE  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp DOT  &kp COMMA  &trans  &kp LS(EXCL)   &trans
+&trans  &trans         &trans       &trans   &trans     &trans                  &trans      &trans                  &trans  &trans   &trans     &trans  &kp LS(QMARK)  &trans
+&trans  &trans         &trans       &trans   &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans   &trans     &trans  &trans         &trans
             >;
         };
 
-        right_middle {
+        r_sym {
             bindings = <
-&trans  &trans        &trans    &trans    &trans        &trans  &trans                                      &trans  &trans  &trans     &trans  &trans    &trans    &trans
-&trans  &trans        &trans    &trans    &trans        &trans  &trans                                      &trans  &trans  &trans     &trans  &trans    &trans    &trans
-&trans  &kp LS(LPAR)  &kp LBKT  &kp RBKT  &kp LS(RPAR)  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp FSLH  &kp BSLH  &trans
-&trans  &trans        &trans    &trans    &trans        &trans                  &trans      &trans                  &trans  &trans     &trans  &trans    &trans    &trans
-&trans  &trans        &trans    &trans    &trans                &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans  &trans    &trans    &trans
-            >;
-        };
-
-        right_ring {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        right_pinky {
-            bindings = <
-&trans  &trans   &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans   &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &kp ESC  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LALT  &kp LGUI  &kp LCTRL  &trans  &trans
-&trans  &trans   &trans    &trans  &trans    &trans                     &trans      &trans                  &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans   &trans    &trans  &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans    &trans     &trans  &trans
+&trans  &trans        &trans        &trans         &trans        &trans      &trans                                      &trans  &trans        &trans        &trans         &trans        &trans  &trans
+&trans  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(POUND)  &kp LS(AMPS)  &trans      &trans                                      &trans  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(POUND)  &kp LS(AMPS)  &trans  &trans
+&trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT       &kp RBKT      &kp ESCAPE  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT       &kp RBKT      &trans  &trans
+&trans  &kp LS(LT)    &kp LS(GT)    &kp LS(LBRC)   &kp LS(RBRC)  &trans                      &trans      &trans                  &kp LS(LT)    &kp LS(GT)    &kp LS(LBRC)   &kp LS(RBRC)  &trans  &trans
+&trans  &trans        &trans        &trans         &trans                    &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans         &trans        &trans  &trans
             >;
         };
     };
