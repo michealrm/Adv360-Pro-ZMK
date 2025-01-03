@@ -58,11 +58,11 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE      &kp N1     &kp N2             &kp N3               &kp N4    &kp N5    &tog 1                                                            &mo 3          &kp N6     &kp N7    &kp N8                &kp N9              &kp N0             &kp C_PLAY_PAUSE
-&kp TAB         &kp Q      &kp W              &kp E                &kp R     &kp T     &none                                                             &none          &kp Y      &kp U     &kp I                 &kp O               &kp P              &kp BACKSLASH
-&kp CAPSLOCK    &clt 10 A  &cmt LEFT_SHIFT S  &cmt LEFT_COMMAND D  &clt 4 F  &clt 1 G  &none      &none             &none      &none  &none              &none          &clt 11 H  &clt 5 J  &cmt RIGHT_COMMAND K  &cmt RIGHT_SHIFT L  &clt 10 SEMICOLON  &kp ENTER
-&kp LEFT_SHIFT  &kp Z      &kp X              &kp C                &kp V     &kp B                                  &none      &none                                    &kp N      &kp M     &trans                &trans              &kp FSLH           &kp RIGHT_SHIFT
-&mo 2           &kp HOME   &kp END            &none                &none               &kp SPACE  &kp LEFT_COMMAND  &none      &none  &kp RIGHT_COMMAND  &kp BACKSPACE             &none     &none                 &kp PAGE_DOWN       &kp PAGE_UP        &mo 2
+&trans        &kp N1             &kp N2    &kp N3     &kp N4    &kp N5  &tog 1                                                                    &mo 3          &kp N6  &kp N7    &kp N8     &kp N9     &kp N0                      &trans
+&kp TAB       &kp Q              &kp W     &kp E      &kp R     &kp T   &none                                                                     &none          &kp Y   &kp U     &kp I      &kp O      &kp P                       &trans
+&kp CAPSLOCK  &cmt LEFT_SHIFT A  &clt 1 S  &clt 10 D  &clt 4 F  &kp G   &none      &none             &none          &none      &none              &none          &kp H   &clt 5 J  &clt 10 K  &clt 11 L  &cmt RIGHT_SHIFT SEMICOLON  &trans
+&trans        &kp Z              &kp X     &kp C      &kp V     &kp B                                &kp LALT       &kp LALT                                     &kp N   &kp M     &trans     &trans     &trans                      &trans
+&mo 2         &none              &none     &none      &none             &kp SPACE  &kp LEFT_COMMAND  &kp LCTRL      &kp LCTRL  &kp RIGHT_COMMAND  &kp BACKSPACE          &none     &none      &none      &trans                      &mo 2
             >;
         };
 
@@ -158,11 +158,11 @@
 
         comb_sym {
             bindings = <
-&trans  &trans     &trans       &trans         &trans        &trans         &trans                                       &trans   &trans         &trans        &trans        &trans        &trans         &trans
-&trans  &kp GRAVE  &kp LS(AT)   &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PLUS)   &trans                                       &trans   &kp MINUS      &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PIPE)  &kp LS(EXCL)   &trans
-&trans  &kp SQT    &kp LS(DQT)  &kp LBKT       &kp RBKT      &kp EQUAL      &kp ESC  &trans  &trans      &trans  &trans  &kp ESC  &kp LS(COLON)  &kp LS(LPAR)  &kp LS(RPAR)  &kp COMMA     &kp SEMI       &trans
-&trans  &kp FSLH   &kp BSLH     &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(UNDER)                   &trans      &trans                   &kp LS(CARET)  &kp LS(LT)    &kp LS(GT)    &kp DOT       &kp LS(QMARK)  &trans
-&trans  &trans     &trans       &trans         &trans                       &trans   &trans  &trans      &trans  &trans  &trans                  &trans        &trans        &trans        &trans         &trans
+&trans      &trans     &trans       &trans         &trans        &trans         &trans                                      &trans  &trans         &trans        &trans        &trans        &trans         &trans
+&trans      &kp GRAVE  &kp LS(AT)   &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PLUS)   &trans                                      &trans  &kp MINUS      &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PIPE)  &kp LS(EXCL)   &trans
+&kp ESCAPE  &kp SQT    &kp LS(DQT)  &kp LBKT       &kp RBKT      &kp EQUAL      &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(COLON)  &kp LS(LPAR)  &kp LS(RPAR)  &kp COMMA     &kp SEMI       &trans
+&trans      &kp FSLH   &kp BSLH     &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(UNDER)                  &trans      &trans                  &kp LS(CARET)  &kp LS(LT)    &kp LS(GT)    &kp DOT       &kp LS(QMARK)  &trans
+&trans      &trans     &trans       &trans         &trans                       &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans        &trans         &trans
             >;
         };
 
