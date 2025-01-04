@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "CUSTOM_MOD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <280>;
             quick_tap_ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -153,21 +153,21 @@
 
         l_nav {
             bindings = <
-&trans  &trans     &trans    &trans    &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans     &trans
-&trans  &trans     &trans    &trans    &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans     &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER  &trans
-&trans  &trans     &trans    &trans    &trans  &trans                  &trans      &trans                  &trans    &trans    &trans  &trans     &trans     &trans
-&trans  &trans     &trans    &trans    &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans     &trans
+&trans  &trans     &trans    &trans  &trans    &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans     &trans
+&trans  &trans     &trans    &trans  &trans    &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans     &trans
+&trans  &kp LCTRL  &kp LALT  &trans  &kp LGUI  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER  &trans
+&trans  &trans     &trans    &trans  &trans    &trans                  &trans      &trans                  &trans    &trans    &trans  &trans     &trans     &trans
+&trans  &trans     &trans    &trans  &trans            &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans     &trans
             >;
         };
 
         r_nav {
             bindings = <
-&trans  &trans     &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans  &trans    &trans    &trans     &trans
-&trans  &trans     &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans  &trans    &trans    &trans     &trans
-&trans  &kp ENTER  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp RGUI  &kp RALT  &kp RCTRL  &trans
-&trans  &trans     &trans    &trans  &trans    &trans                     &trans      &trans                  &trans  &trans  &trans    &trans    &trans     &trans
-&trans  &trans     &trans    &trans  &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans    &trans    &trans     &trans
+&trans  &trans     &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans    &trans  &trans     &trans    &trans
+&trans  &trans     &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans    &trans  &trans     &trans    &trans
+&trans  &kp ENTER  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp RGUI  &trans  &kp LCTRL  &kp LALT  &trans
+&trans  &trans     &trans    &trans  &trans    &trans                     &trans      &trans                  &trans  &trans    &trans  &trans     &trans    &trans
+&trans  &trans     &trans    &trans  &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans  &trans     &trans    &trans
             >;
         };
 
