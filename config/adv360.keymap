@@ -52,7 +52,7 @@
             label = "CLT_L";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
             hold-trigger-on-release;
@@ -66,7 +66,7 @@
             label = "CLT_R";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
             hold-trigger-on-release;
