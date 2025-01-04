@@ -215,11 +215,11 @@
 
         comb_sym {
             bindings = <
-&none   &none         &none       &none          &none         &none          &none                                  &none  &none          &none         &none         &none      &none          &none
-&none   &kp LS(PIPE)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PLUS)   &none                                  &none  &kp MINUS      &kp LS(AMPS)  &kp LS(STAR)  &kp GRAVE  &kp LS(EXCL)   &none
-&trans  &kp LS(DQT)   &kp SQT     &kp LBKT       &kp RBKT      &kp EQUAL      &none  &none  &none      &none  &none  &none  &kp LS(COLON)  &kp LS(LPAR)  &kp LS(RPAR)  &kp COMMA  &kp SEMI       &trans
-&none   &kp FSLH      &kp BSLH    &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(CARET)                &none      &none                &kp LS(UNDER)  &kp LS(LT)    &kp LS(GT)    &kp DOT    &kp LS(QMARK)  &none
-&none   &none         &none       &none          &none                        &none  &none  &none      &none  &none  &none                 &none         &none         &none      &none          &none
+&trans  &trans        &trans      &trans         &trans        &trans         &trans                                      &trans  &trans         &trans        &trans        &trans     &trans         &trans
+&trans  &kp LS(PIPE)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PLUS)   &trans                                      &trans  &kp MINUS      &kp LS(AMPS)  &kp LS(STAR)  &kp GRAVE  &kp LS(EXCL)   &trans
+&trans  &kp LS(DQT)   &kp SQT     &kp LBKT       &kp RBKT      &kp EQUAL      &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(COLON)  &kp LS(LPAR)  &kp LS(RPAR)  &kp COMMA  &kp SEMI       &trans
+&trans  &kp FSLH      &kp BSLH    &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(CARET)                  &trans      &trans                  &kp LS(UNDER)  &kp LS(LT)    &kp LS(GT)    &kp DOT    &kp LS(QMARK)  &trans
+&trans  &trans        &trans      &trans         &trans                       &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans     &trans         &trans
             >;
         };
 
