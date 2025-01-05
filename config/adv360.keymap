@@ -115,11 +115,11 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp F1        &kp F2        &kp F3    &kp F4    &kp F5  &kp F6                                                                                    &kp F7         &kp F8  &kp F9        &kp F10       &kp F11     &kp F12        &kp ENTER
-&kp TAB    &kp Q         &kp W         &kp E     &kp R     &kp T   &kp SQT                                                                                   &kp LS(DQT)    &kp Y   &kp U         &kp I         &kp O       &kp P          &kp CAPSLOCK
-&mo 10     &kp A         &kp S         &kp D     &kp F     &kp G   &mo 4      &clt 12 KP_NUMBER_0  &mo 3          &clt 11 C_PLAY_PAUSE  &clt 12 KP_NUMBER_5  &mo 5          &kp H   &kp J         &kp K         &kp L       &kp SEMI       &mo 10
-&kp LSHFT  &kp Z         &kp X         &kp C     &kp V     &kp B                                   &kp LALT       &kp LALT                                                  &kp N   &kp M         &kp COMMA     &kp DOT     &kp LS(QMARK)  &kp RSHFT
-&mo 2      &kp LS(LBRC)  &kp LS(RBRC)  &kp LBKT  &kp RBKT          &kp SPACE  &kp LEFT_COMMAND     &kp LCTRL      &kp LCTRL             &kp RIGHT_COMMAND    &kp BACKSPACE          &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(LT)  &kp LS(GT)     &mo 2
+&sl 2      &kp N1       &kp N2   &kp N3    &kp N4    &kp N5  &mo 1                                                                                &mo 3          &kp N6  &kp N7        &kp N8        &kp N9        &kp N0        &none
+&kp TAB    &kp Q        &kp W    &kp E     &kp R     &kp T   &kp MINUS                                                                            &kp EQUAL      &kp Y   &kp U         &kp I         &kp O         &kp P         &kp GRAVE
+&kp ESC    &kp A        &kp S    &kp D     &kp F     &kp G   &kp FSLH   &trans            &trans         &clt 11 C_PLAY_PAUSE  &trans             &kp BSLH       &kp H   &kp J         &kp K         &kp L         &kp SEMI      &kp ENTER
+&kp LSHFT  &kp Z        &kp X    &kp C     &kp V     &kp B                                &kp LALT       &kp LALT                                                &kp N   &kp M         &kp COMMA     &kp DOT       &kp UP        &kp RSHFT
+&mo 2      &kp LS(DQT)  &kp SQT  &kp LBKT  &kp RBKT          &kp SPACE  &kp LEFT_COMMAND  &kp LCTRL      &kp LCTRL             &kp RIGHT_COMMAND  &kp BACKSPACE          &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(LEFT)  &kp LS(DOWN)  &kp RIGHT
             >;
         };
 
@@ -225,11 +225,11 @@
 
         multimedia {
             bindings = <
-&trans  &trans  &trans         &trans            &trans           &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp C_VOL_DN   &kp C_MUTE        &kp C_VOLUME_UP  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_FF         &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp C_BRI_DEC  &kp C_BRI_INC     &kp CAPSLOCK     &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans         &trans            &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none  &none  &none          &none             &none            &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &kp C_VOL_DN   &kp C_MUTE        &kp C_VOLUME_UP  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_FF         &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &kp C_BRI_DEC  &kp C_BRI_INC     &kp CAPSLOCK     &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none          &none             &none                   &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
@@ -240,6 +240,16 @@
 &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &none  &none  &kp KP_NUMBER_0  &none      &kp KP_NUMBER_5  &none  &none  &none  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
 &none  &none            &none            &none            &none            &none                          &none      &none                          &none  &none            &none            &none            &none            &none
 &none  &none            &none            &none            &none                   &none  &none            &none      &none            &none  &none         &none            &none            &none            &none            &none
+            >;
+        };
+
+        layer_13 {
+            bindings = <
+&trans      &trans        &trans      &trans         &trans        &trans         &trans                                      &trans  &trans  &trans        &trans        &trans     &trans        &trans
+&trans      &kp LS(PIPE)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp A          &trans                                      &trans  &kp A   &kp LS(AMPS)  &kp LS(STAR)  &kp GRAVE  &kp LS(EXCL)  &trans
+&kp ESCAPE  &kp A         &kp A       &kp A          &kp A         &kp A          &trans  &trans  &trans      &trans  &trans  &trans  &kp A   &kp A         &kp A         &kp A      &kp A         &kp ENTER
+&trans      &kp A         &kp BSLH    &kp A          &kp A         &kp LS(CARET)                  &trans      &trans                  &kp A   &kp A         &kp A         &kp A      &kp A         &trans
+&trans      &trans        &trans      &trans         &trans                       &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans        &trans     &trans        &trans
             >;
         };
     };
