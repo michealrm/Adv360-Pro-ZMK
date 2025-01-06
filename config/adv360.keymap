@@ -110,6 +110,15 @@
     macros {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        deleteword {
+            bindings = <&kp RA(BACKSPACE)>;
+            key-positions = <70 69>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
