@@ -114,8 +114,18 @@
         compatible = "zmk,combos";
 
         deleteword {
-            bindings = <&kp RA(BACKSPACE)>;
-            key-positions = <70 69>;
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <70 65>;
+        };
+
+        deleteline {
+            bindings = <&kp RG(BACKSPACE)>;
+            key-positions = <69 70>;
+        };
+
+        newline {
+            bindings = <&kp ENTER>;
+            key-positions = <65 66>;
         };
     };
 
