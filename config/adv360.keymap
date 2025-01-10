@@ -124,11 +124,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4    &kp N5  &mo 1                                                                      &mo 3              &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E     &kp R     &kp T   &kp EQUAL                                                                  &kp MINUS          &kp Y   &kp U     &kp I      &kp O     &kp P     &kp EQUAL
-&kp ESC    &kp A     &kp S     &kp D     &kp F     &kp G   &kp FSLH   &mo 11            &mo 4          &kp DELETE     &kp RA(DELETE)  &kp BSLH           &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z     &kp X     &kp C     &kp V     &kp B                                &kp LALT       &kp LALT                                          &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp LBKT  &kp RBKT  &kp LBKT  &kp RBKT          &kp SPACE  &kp LEFT_COMMAND  &kp LCTRL      &kp RIGHT_GUI  &kp BACKSPACE   &kp RA(BACKSPACE)          &kp APOS  &kp LBKT   &kp RBKT  &kp BSLH  &kp BSLH
+&kp LS(PRCNT)  &kp N1         &kp N2        &kp N3        &kp N4        &kp N5  &tog 2                                                         &mo 3              &kp N6  &kp N7    &kp N8     &kp N9         &kp N0        &kp LS(AT)
+&kp TAB        &kp Q          &kp W         &kp E         &kp R         &kp T   &kp FSLH                                                       &kp BSLH           &kp Y   &kp U     &kp I      &kp O          &kp P         &kp LS(CARET)
+&kp ESC        &kp A          &kp S         &kp D         &kp F         &kp G   &kp EQUAL  &kp UP     &kp DOWN       &kp RALT   &kp DELETE     &kp MINUS          &kp H   &kp J     &kp K      &kp L          &kp SEMI      &kp SQT
+&kp LSHFT      &kp Z          &kp X         &kp C         &kp V         &kp B                         &kp LEFT       &kp RCTRL                                    &kp N   &kp M     &kp COMMA  &kp DOT        &kp LS(STAR)  &kp RSHFT
+&kp LS(DLLR)   &kp LS(POUND)  &kp LS(EXCL)  &kp LS(RPAR)  &kp LS(LPAR)          &kp SPACE  &kp ENTER  &kp RIGHT      &kp RGUI   &kp BACKSPACE  &kp RA(BACKSPACE)          &kp LBKT  &kp RBKT   &kp LS(QMARK)  &kp LS(AMPS)  &kp LS(CARET)
             >;
         };
 
@@ -144,7 +144,7 @@
 
         fn {
             bindings = <
-&kp F1        &kp F2                &kp F3                             &kp F4                                  &kp F5               &kp F6  &tog 1                                      &mo 3   &kp F7      &kp F8            &kp F9      &kp F10       &kp F11       &kp F12
+&kp F1        &kp F2                &kp F3                             &kp F4                                  &kp F5               &kp F6  &tog 2                                      &mo 3   &kp F7      &kp F8            &kp F9      &kp F10       &kp F11       &kp F12
 &kp C_BRI_DN  &kp C_BRIGHTNESS_INC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_VOICE_COMMAND  &trans  &trans                                      &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE
 &trans        &trans                &trans                             &trans                                  &trans               &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT    &kp DOWN          &kp UP      &kp RIGHT     &trans        &trans
 &trans        &trans                &trans                             &trans                                  &trans               &trans                  &trans      &trans                  &trans      &trans            &trans      &trans        &trans        &trans
