@@ -113,9 +113,9 @@
     combos {
         compatible = "zmk,combos";
 
-        deleteline {
-            bindings = <&kp RG(BACKSPACE)>;
-            key-positions = <69 70>;
+        dictate {
+            bindings = <&kp C_VOICE_COMMAND>;
+            key-positions = <67 37>;
         };
     };
 
