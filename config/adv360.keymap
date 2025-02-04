@@ -20,7 +20,7 @@
         dictation: dictation {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings = <&kp GLOBE &kp GLOBE>;
             label = "DICTATION";
         };
 
