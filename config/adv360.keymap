@@ -17,6 +17,20 @@
             bindings = <&kp RET>;
         };
 
+        dictation: dictation {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "DICTATION";
+        };
+
+        emoji: emoji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "EMOJI";
+        };
+
         #endif
 
         clt: cust_lt {
@@ -114,8 +128,13 @@
         compatible = "zmk,combos";
 
         dictate {
-            bindings = <&kp C_VOICE_COMMAND>;
-            key-positions = <67 37>;
+            bindings = <&dictation>;
+            key-positions = <67 68>;
+        };
+
+        emoji {
+            bindings = <&kp LG(LC(SPACE))>;
+            key-positions = <67 53>;
         };
     };
 
