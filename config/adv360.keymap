@@ -121,7 +121,7 @@
         compatible = "zmk,combos";
 
         dictate {
-            bindings = <&dictation>;
+            bindings = <&macro_ver>;
             key-positions = <67 68>;
         };
 
