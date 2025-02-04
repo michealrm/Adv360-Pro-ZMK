@@ -174,76 +174,6 @@
             >;
         };
 
-        l_nav {
-            bindings = <
-&none  &none      &none     &none  &none     &none  &none                                  &none  &none  &none     &none     &none      &none      &none
-&none  &none      &none     &none  &none     &none  &none                                  &none  &none  &none     &kp UP    &none      &none      &none
-&none  &kp LCTRL  &kp LALT  &none  &kp LGUI  &none  &none  &none  &none      &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER  &none
-&none  &none      &none     &none  &none     &none                &none      &none                &none  &none     &none     &none      &none      &none
-&none  &none      &none     &none  &none            &none  &none  &none      &none  &none  &none         &none     &none     &none      &none      &none
-            >;
-        };
-
-        r_nav {
-            bindings = <
-&trans  &trans     &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans    &trans  &trans     &trans    &trans
-&trans  &trans     &trans    &trans  &trans    &trans     &trans                                      &trans  &trans  &trans    &trans  &trans     &trans    &trans
-&trans  &kp ENTER  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp RGUI  &trans  &kp LCTRL  &kp LALT  &trans
-&trans  &trans     &trans    &trans  &trans    &trans                     &trans      &trans                  &trans  &trans    &trans  &trans     &trans    &trans
-&trans  &trans     &trans    &trans  &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans  &trans     &trans    &trans
-            >;
-        };
-
-        l_write {
-            bindings = <
-&trans  &trans        &trans  &trans     &trans   &trans  &trans                                      &trans  &trans  &trans     &trans   &trans       &trans     &trans
-&trans  &trans        &trans  &trans     &trans   &trans  &trans                                      &trans  &trans  &trans     &trans   &trans       &trans     &trans
-&trans  &kp EXCL      &trans  &kp COMMA  &kp DOT  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp GRAVE  &kp SQT  &kp LS(DQT)  &kp CARET  &trans
-&trans  &kp QUESTION  &trans  &trans     &trans   &trans                  &trans      &trans                  &trans  &trans     &trans   &trans       &trans     &trans
-&trans  &trans        &trans  &trans     &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans   &trans       &trans     &trans
-            >;
-        };
-
-        r_write {
-            bindings = <
-&trans  &trans         &trans       &trans   &trans     &trans  &trans                                      &trans  &trans  &trans   &trans     &trans  &trans         &trans
-&trans  &trans         &trans       &trans   &trans     &trans  &trans                                      &trans  &trans  &trans   &trans     &trans  &trans         &trans
-&trans  &kp LS(CARET)  &kp LS(DQT)  &kp SQT  &kp GRAVE  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp DOT  &kp COMMA  &trans  &kp LS(EXCL)   &trans
-&trans  &trans         &trans       &trans   &trans     &trans                  &trans      &trans                  &trans  &trans   &trans     &trans  &kp LS(QMARK)  &trans
-&trans  &trans         &trans       &trans   &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans   &trans     &trans  &trans         &trans
-            >;
-        };
-
-        l_sym {
-            bindings = <
-&trans  &trans  &trans        &trans        &trans         &trans        &trans                                      &trans        &kp LS(CARET)  &kp LS(AT)    &kp LS(DLLR)  &kp LS(PRCNT)  &kp SQT        &kp LS(DQT)
-&trans  &trans  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(POUND)  &kp LS(DLLR)  &trans                                      &kp LS(PLUS)  &kp MINUS      &kp LS(AMPS)  &kp LS(STAR)  &kp LS(AMPS)   &kp COMMA      &kp DOT
-&trans  &trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT       &kp RBKT      &trans  &trans  &trans      &trans  &trans  &kp EQUAL     &kp ESCAPE     &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT       &kp RBKT       &kp LS(COLON)
-&trans  &trans  &kp LS(LT)    &kp LS(GT)    &kp LS(LBRC)   &kp LS(RBRC)                  &trans      &trans                        &kp LS(UNDER)  &kp LS(LT)    &kp LS(GT)    &kp LS(LBRC)   &kp LS(RBRC)   &kp SEMI
-&trans  &trans  &trans        &trans        &trans                       &trans  &trans  &trans      &trans  &trans  &trans                       &kp LS(PIPE)  &kp FSLH      &kp BSLH       &kp LS(QMARK)  &kp LS(EXCL)
-            >;
-        };
-
-        r_sym {
-            bindings = <
-&kp DOUBLE_QUOTES  &kp SQT        &kp LS(CARET)  &kp LS(AT)    &kp LS(DLLR)   &kp LS(PRCNT)  &trans                                            &trans  &trans        &trans        &trans         &trans        &trans  &trans
-&kp DOT            &kp COMMA      &kp LS(STAR)   &kp LS(AMPS)  &kp LS(POUND)  &kp MINUS      &kp LS(PLUS)                                      &trans  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(POUND)  &kp LS(AMPS)  &trans  &trans
-&kp LS(COLON)      &kp LS(LPAR)   &kp LS(RPAR)   &kp LBKT      &kp RBKT       &kp ESCAPE     &kp EQUAL     &trans  &trans      &trans  &trans  &trans  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT       &kp RBKT      &trans  &trans
-&kp SEMI           &kp LS(LT)     &kp LS(GT)     &kp LS(LBRC)  &kp LS(RBRC)   &kp LS(UNDER)                        &trans      &trans                  &kp LS(LT)    &kp LS(GT)    &kp LS(LBRC)   &kp LS(RBRC)  &trans  &trans
-&kp LS(EXCL)       &kp LS(QMARK)  &kp FSLH       &kp BSLH      &kp LS(PIPE)                  &trans        &trans  &trans      &trans  &trans  &trans                &trans        &trans         &trans        &trans  &trans
-            >;
-        };
-
-        comb_sym {
-            bindings = <
-&trans      &trans        &trans      &trans         &trans        &trans         &trans                                      &trans  &trans         &trans        &trans        &trans     &trans         &trans
-&trans      &kp LS(PIPE)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PLUS)   &trans                                      &trans  &kp MINUS      &kp LS(AMPS)  &kp LS(STAR)  &kp GRAVE  &kp LS(EXCL)   &trans
-&kp ESCAPE  &kp LS(DQT)   &kp SQT     &kp LBKT       &kp RBKT      &kp EQUAL      &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(COLON)  &kp LS(LPAR)  &kp LS(RPAR)  &kp COMMA  &kp SEMI       &kp ENTER
-&trans      &kp FSLH      &kp BSLH    &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(CARET)                  &trans      &trans                  &kp LS(UNDER)  &kp LS(LT)    &kp LS(GT)    &kp DOT    &kp LS(QMARK)  &trans
-&trans      &trans        &trans      &trans         &trans                       &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans     &trans         &trans
-            >;
-        };
-
         multimedia {
             bindings = <
 &none  &none  &none          &none             &none            &none  &none                                  &none  &none  &none  &none  &none  &none  &none
@@ -251,26 +181,6 @@
 &none  &none  &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_FF         &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &kp C_BRI_DEC  &kp C_BRI_INC     &kp CAPSLOCK     &none                &none      &none                &none  &none  &none  &none  &none  &none
 &none  &none  &none          &none             &none                   &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        comb_nums {
-            bindings = <
-&none  &none            &none            &none            &none            &none  &none                                                      &none  &none  &none            &none            &none            &none            &none
-&none  &none            &none            &none            &none            &none  &none                                                      &none  &none  &none            &none            &none            &none            &none
-&none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &none  &none  &kp KP_NUMBER_0  &none      &kp KP_NUMBER_5  &none  &none  &none  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
-&none  &none            &none            &none            &none            &none                          &none      &none                          &none  &none            &none            &none            &none            &none
-&none  &none            &none            &none            &none                   &none  &none            &none      &none            &none  &none         &none            &none            &none            &none            &none
-            >;
-        };
-
-        layer_13 {
-            bindings = <
-&trans      &trans        &trans      &trans         &trans        &trans         &trans                                      &trans  &trans  &trans        &trans        &trans     &trans        &trans
-&trans      &kp LS(PIPE)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp A          &trans                                      &trans  &kp A   &kp LS(AMPS)  &kp LS(STAR)  &kp GRAVE  &kp LS(EXCL)  &trans
-&kp ESCAPE  &kp A         &kp A       &kp A          &kp A         &kp A          &trans  &trans  &trans      &trans  &trans  &trans  &kp A   &kp A         &kp A         &kp A      &kp A         &kp ENTER
-&trans      &kp A         &kp BSLH    &kp A          &kp A         &kp LS(CARET)                  &trans      &trans                  &kp A   &kp A         &kp A         &kp A      &kp A         &trans
-&trans      &trans        &trans      &trans         &trans                       &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans        &trans     &trans        &trans
             >;
         };
     };
