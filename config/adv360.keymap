@@ -122,7 +122,7 @@
         compatible = "zmk,combos";
 
         dictate {
-            bindings = <&DICT>;
+            bindings = <&kp CAPS>;
             key-positions = <67 68>;
         };
 
