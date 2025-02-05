@@ -24,6 +24,7 @@
             #binding-cells = <0>;
             bindings = <&kp CAPS &kp CAPS>;
             label = "DICT";
+            wait-ms = <50>;
         };
 
         clt: cust_lt {
