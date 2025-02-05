@@ -22,7 +22,7 @@
         DICT: DICT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings = <&kp CAPS &kp CAPS>;
             label = "DICT";
         };
 
