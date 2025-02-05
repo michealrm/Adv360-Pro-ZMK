@@ -17,11 +17,11 @@
             bindings = <&kp ENTER>;
         };
 
-        dictation: dictation {
+        DICT: DICT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GLOBE &kp GLOBE>;
-            label = "DICTATION";
+            label = "DICT";
         };
 
         #endif
@@ -121,7 +121,7 @@
         compatible = "zmk,combos";
 
         dictate {
-            bindings = <&dictation>;
+            bindings = <&DICT>;
             key-positions = <67 68>;
         };
 
