@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-macro";
             label = "macro_version";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp GLOBE>;
+            bindings = <&kp ENTER>;
         };
 
         dictation: dictation {
@@ -121,7 +121,7 @@
         compatible = "zmk,combos";
 
         dictate {
-            bindings = <&macro_ver>;
+            bindings = <&dictation>;
             key-positions = <67 68>;
         };
 
